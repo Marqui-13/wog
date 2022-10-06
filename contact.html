@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- FONTAWESOME KIT -->
+    <script
+      src="https://kit.fontawesome.com/b526bbc698.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT INTERSECTION OBSERVER TAG -->
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body>
+
+    <!-- NAV SECTION STARTS -->
+    <header class="header">
+      <img
+        src="./images/navLogo.png"
+        alt="home logo"
+        class="hidden2"
+        width="80px"
+        height="80px"
+      />
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a class="navbar-link about hidden" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="navbar-link about hidden" href="https://marqui-projects.netlify.app/"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link about hidden" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link about hidden"
+              href="https://marqui-resume.on.fleek.co/"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MOBILE HAMBURGER/CLOSE ICONS -->
+      <div class="mobile-navbar-btn hidden3">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </header>
+    <!-- NAV SECTION ENDS -->
+
+    <!-- CANVAS TAG -->
+    <canvas id="canvas1"></canvas>
+
+    <!-- CONTENT SECTION STARTS -->
+    <p id="information3" style="font-size: 50px; font-weight: 900; margin-bottom: 90px; align-items: center; justify-content: center; text-align: center; left: 2%; top: 10%; position: relative;">Contact</h1>
+      
+      <div class="row">
+        <div class="hidden3 column">
+          <img src="./images/map.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <!-- CONTACT FORM STARTS -->
+          <form action="https://formsubmit.co/threeee@skiff.com" method="POST">
+            <label for="fname">
+              <span class="contact2 hidden">F</span>
+              <span class="contact2 hidden">i</span>
+              <span class="contact2 hidden">r</span>
+              <span class="contact2 hidden">s</span> 
+              <span class="contact2 hidden">t</span>
+              <span style="margin-left: 5px; padding: 0px;" class="contact2 hidden">N</span>
+              <span class="contact2 hidden">a</span>
+              <span class="contact2 hidden">m</span>
+              <span class="contact2 hidden">e</span>
+            </label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Type your first name..."
+              required
+            ><br /><br />
+            <label for="lname">
+              <span class="contact3 hidden">L</span>
+              <span class="contact3 hidden">a</span>
+              <span class="contact3 hidden">s</span> 
+              <span class="contact3 hidden">t</span>
+              <span style="margin-left: 5px; padding: 0px;" class="contact3 hidden">N</span>
+              <span class="contact3 hidden">a</span>
+              <span class="contact3 hidden">m</span>
+              <span class="contact3 hidden">e</span>
+            </label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Type your last name..."
+              style="margin-left: 5px;"
+              required
+            ><br /><br />
+            <label  for="country">
+              <span class="contact35 hidden">E</span>
+              <span class="contact35 hidden">m</span>
+              <span class="contact35 hidden">a</span> 
+              <span class="contact35 hidden">i</span>
+              <span class="contact35 hidden">l</span>
+            </label>
+            <input 
+            type="email" 
+            id="em"
+            name="email" 
+            placeholder="Type your email address..."
+            style="margin-left: 45px;"
+            required
+            ><br /><br />
+            <input type="hidden" name="_next" value="https://marqui-website.netlify.app/thankyou.html">
+            <label  for="country">
+              <span class="contact4 hidden">C</span>
+              <span class="contact4 hidden">o</span>
+              <span class="contact4 hidden">u</span> 
+              <span class="contact4 hidden">n</span>
+              <span class="contact4 hidden">t</span>
+              <span class="contact4 hidden">r</span>
+              <span class="contact4 hidden">y</span>
+            </label>
+            <select style="cursor: pointer; margin-left: 26px;" id="country" name="country" required>
+              <option value="australia">USA</option>
+              <option value="canada">Canada</option>
+              <option value="usa">Australia</option>
+              <option value="usa">UK</option>
+            </select
+            ><br /><br />
+            <label for="subject">
+              <span class="contact5 hidden">S</span>
+              <span class="contact5 hidden">u</span>
+              <span class="contact5 hidden">b</span> 
+              <span class="contact5 hidden">j</span>
+              <span class="contact5 hidden">e</span>
+              <span class="contact5 hidden">c</span>
+              <span class="contact5 hidden">t</span>
+            </label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Type your message..."
+              style="height: 245px; margin-left: 27px;"
+              required
+            ></textarea
+            ><br /><br />
+            <input style="cursor: pointer; margin-bottom: 120px;" class="contact6 hidden" type="submit" name="submit" value="Submit"/>
+          </form>
+          <!-- CONTACT FORM ENDS -->
+        </div>
+      </div>
+    <!-- CONTENT SECTION ENDS -->
+
+    <!-- TOP OF PAGE BUTTON STARTS -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;
+    </button>
+    <!-- TOP OF PAGE BUTTON ENDS -->
+
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer class="footer-social-overlap footer-social-icons-wrapper">
+        <a
+          href="#"
+          class="generic-anchor"
+          target="_blank"
+          title="Handshake"
+          itemprop="significantLink"
+          ><i class="fa-solid fa-handshake logo hidden"></i
+        ></a>
+        <a
+          href="#"
+          class="generic-anchor"
+          target="_blank"
+          title="LinkedIn"
+          itemprop="significantLink"
+          ><i class="fa-brands fa-linkedin logo hidden"></i
+        ></a>
+        <a
+          href="#"
+          class="generic-anchor"
+          target="_blank"
+          title="GitHub"
+          itemprop="significantLink"
+          ><i class="fa-brands fa-github-alt logo hidden"></i
+        ></a>
+        <a
+          href="#"
+          class="generic-anchor"
+          target="_blank"
+          title="Radicle"
+          itemprop="significantLink"
+          ><i class="fa-solid fa-seedling logo hidden"></i
+        ></a>
+    </footer>
+
+    <div class="flex-rw">
+      <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">C</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">o</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">p</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">y</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">g</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">h</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">t</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;"><i class="fa fa-copyright" role="copyright"></i></span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">0</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">-</span> 
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">M</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">a</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">q</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">u</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span> 
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">O</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">-</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">A</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">l</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">l</span>
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">R</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">g</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">h</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">t</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">s</span>
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">R</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">s</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">v</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">d</span>
+    </div>
+    <!-- FOOTER SECTION ENDS -->
+
+    
+
+    <!-- JAVASCRIPT SRC TAGS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/logic.js"></script>
+  </body>
+</html>
