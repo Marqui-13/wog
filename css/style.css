@@ -146,7 +146,14 @@ section {
   opacity: 0;
   filter: blur(50px);
   transform: translateX(-100%);
-  transition: all 1.5s;
+  transition: all 3s;
+}
+
+.hiddenAlt {
+  opacity: 0;
+  filter: blur(50px);
+  transform: translateX(100%);
+  transition: all 3s;
 }
 
 .hidden2 {
