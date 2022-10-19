@@ -14,7 +14,7 @@ html {
   overflow-x: hidden;
   background: black;
   color: white;
-  min-height: 400vh;
+  height: 100%;
 }
 
 body {
@@ -59,7 +59,7 @@ canvas {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 400vh;
+  height: 100%;
   z-index: -1;
 }
 
