@@ -14,7 +14,7 @@ html {
   overflow-x: hidden;
   background: black;
   color: white;
-  height: 100%;
+  min-height: 400vh;
 }
 
 body {
@@ -59,7 +59,7 @@ canvas {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 400vh;
   z-index: -1;
 }
 
@@ -88,6 +88,10 @@ h2 {
   margin-left: 10px;
   margin-top: 50px;
   letter-spacing: 1px;
+}
+
+#information1 {
+  font-size: 80px;
 }
 
 span {
@@ -2216,6 +2220,7 @@ Responsive Codes
   } */
 
 
+
   .footer-social-overlap > a {
     margin: auto;
   }
@@ -2226,6 +2231,10 @@ Responsive Codes
 
   .footer-bottom-rights {
     display: block;
+  }
+
+  #information1 {
+    font-size: 60px;
   }
 }
 
