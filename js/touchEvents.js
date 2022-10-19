@@ -8,6 +8,12 @@ const toggleNavbar = () => {
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
+// mouse position
+const mouse = {
+    x: null,
+    y: null
+}
+
 window.addEventListener("touchstart", event => {
   mouse.x = event.changedTouches[0].clientX;
   mouse.y = event.changedTouches[0].clientY;
