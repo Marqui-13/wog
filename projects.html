@@ -4,33 +4,240 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RGB Distortion On Scroll</title>
-    <link rel="stylesheet" href="./css/projectsStyle.css" />
+    <title>Projects</title>
+    <!-- EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- FONTAWESOME KIT -->
+    <script
+      src="https://kit.fontawesome.com/b526bbc698.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- INTERSECTION OBSERVER -->
+    <script defer src="./js/app.js"></script>
   </head>
   <body>
 
-    <main>
-      <div class="scrollable">
-        <div class="container">
-          <div style="margin-top: 0px;" class="header-container">
-            <h3>Projects</h3>
-            <img src="./images/black.PNG" width="300" height="300" alt="Projects" />
-          </div>
-<!--           <div class="image-container">
-            <h1 style="cursor: pointer;"><a style="text-decoration: none; color: white;" href="https://marqui-website.netlify.app/animatedmodel">Animated Model</a></h1>
-            <img src="./images/animModel.PNG" width="300" height="300" alt="Animated Model" />
-          </div>
-          <div class="image-container">
-            <h1 style="cursor: pointer;"><a style="text-decoration: none; color: white;" href="#">Audio Visualizer</a></h1>
-            <img src="./images/audiowaveform.PNG" width="470" height="400" alt="Audio Visualizer" />
-          </div>
-          <div class="image-container">
-            <h1 style="cursor: pointer;"><a style="text-decoration: none; color: white;" href="https://react-coin-search.on.fleek.co">CoinSearch</a></h1>
-            <img src="./images/coinsearch.png" width="300" height="400" alt="Coin Search" />
-          </div> -->
-        </div>
+    <!-- NAV SECTION STARTS -->
+    <header class="header">
+      <img
+        src="./images/navLogo.png"
+        alt="home logo"
+        class="hidden"
+        style="margin-left: 10px;"
+        width="80px"
+        height="80px"
+      />
+
+      <nav class="navbar">
+        <ul class="navbar-list hiddenAlt">
+          <li>
+            <a class="navbar-link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="./projects.html"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              href="https://marqui-resume.on.fleek.co/"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MOBILE HAMBURGER/CLOSE ICONS -->
+      <div class="mobile-navbar-btn hiddenAlt">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div>
-    </main>
-    <script src="./js/projectsApp.js"></script>
+    </header>
+    <!-- NAV SECTION ENDS -->
+
+    <!-- CANVAS TAG -->
+    <canvas id="canvas1"></canvas>
+
+        <!-- CONTENT SECTION STARTS -->   
+        <div class="logo">
+
+          <!-- INFORMATION + TEXT REVEAL EFFECT STARTS -->
+          <p id="information1" style="margin-left: 10px; margin-top: 20px; margin-bottom: 20px; font-weight: bolder;">Projects</p>
+          <!-- INFORMATION + TEXT REVEAL EFFECT ENDS -->
+
+          <a href="https://generativeart.on.fleek.co"><img
+            src="./images/ga.PNG"
+            style="cursor: poniter; margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hidden"
+          />
+          </a>
+
+          <a href="https://marqui-projects.on.fleek.co"><img
+            src="./images/pcu.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hiddenAlt"
+          /></a>
+
+          <a href="https://pta.on.fleek.co"><img
+            src="./images/pta.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hiddenAlt"
+          /></a>
+
+          <a href="https://dpta.on.fleek.co"><img
+            src="./images/dpta.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hidden"
+          /></a>
+
+          <a href="https://coinlist.on.fleek.co"><img
+            src="./images/coinlist.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hiddenAlt"
+          /></a>
+
+          <a href="https://react-weather-app.on.fleek.co"><img
+            src="./images/rwa.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hiddenAlt"
+          /></a>
+
+          <a href="https://threejs-landing-page.on.fleek.co"><img
+            src="./images/threejslp1.PNG"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hidden"
+          /></a>
+
+          <a href="https://thrite.netlify.app"><img
+            src="./images/thrite.png"
+            style="margin-top: 15px; margin-bottom: 0px;"
+            alt="image"
+            width="255px"
+            height="250px"
+            class="hiddenAlt"
+          /></a>
+        </div>
+        <!-- CONTENT SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer class="footer-social-overlap footer-social-icons-wrapper">
+        <a
+          href="https://angel.co/u/marqui13"
+          class="generic-anchor"
+          target="_blank"
+          title="AngelList"
+          itemprop="significantLink"
+          ><i class="fa-regular fa-hand-peace logo hidden"></i></a>
+        <a
+          href="https://github.com/Marqui-13"
+          class="generic-anchor"
+          target="_blank"
+          title="GitHub"
+          itemprop="significantLink"
+          ><i class="fa-brands fa-github-alt logo hidden"></i></a>
+        <a
+          href="https://www.twitter.com/mthreeee13/"
+          class="generic-anchor"
+          target="_blank"
+          title="Twitter"
+          itemprop="significantLink"
+          ><i class="fa-brands fa-twitter logo hidden"></i></a>
+        <a
+          href="https://radicle.xyz/"
+          class="generic-anchor"
+          target="_blank"
+          title="Radicle"
+          itemprop="significantLink"
+          ><i class="fa-solid fa-seedling logo hidden"></i></a>
+    </footer>
+
+    <div class="flex-rw">
+      <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">C</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">o</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">p</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">y</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">g</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">h</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">t</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;"><i class="fa fa-copyright" role="copyright"></i></span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">0</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">2</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">-</span> 
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">M</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">a</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">q</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">u</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span> 
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">O</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">-</span>
+
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">A</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">l</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">l</span>
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">R</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">i</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">g</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">h</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">t</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">s</span>
+        <span  class="footer0 hidden" style="margin-left: 5px; padding: 0px;">R</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">s</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span> 
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">r</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">v</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">e</span>
+        <span  class="footer0 hidden" style="margin: 0px; padding: 0px;">d</span>
+    </div>
+    <!-- FOOTER SECTION ENDS -->
+
+    <!-- JAVASCRIPT SRC TAGS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/logic.js"></script>
   </body>
 </html>
