@@ -81,7 +81,7 @@ class Particle {
         this.y = y;
         this.directionX = directionX;
         this.directionY = directionY;
-        this.size = size;
+        this.size = size / 4;
         this.color = color;
     }
     // method to draw individual particle
