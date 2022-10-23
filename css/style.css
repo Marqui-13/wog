@@ -1733,7 +1733,7 @@ footer {
   height: 20px;
   bottom: 0;
   position: fixed;
-  z-index: -1;
+  z-index: 15;
 } 
 
 
