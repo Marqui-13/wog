@@ -72,7 +72,7 @@ body {
 canvas {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   width: 522px; 
   height: 353px;
   transform: translate(-50%, -50%);
