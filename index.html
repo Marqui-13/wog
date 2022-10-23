@@ -75,7 +75,7 @@
     <div class="plane">
 
       <!-- image that will be used as a texture by our plane -->
-      <img src="./images/profile.png" crossorigin="anonymous"/>
+      <img src="https://www.martin-laxenaire.fr/csstricks/images/second-example-texture.jpg" crossorigin="anonymous" />
     </div>
 
         <script id="plane-vs" type="x-shader/x-vertex">
@@ -94,6 +94,15 @@
       // our texture matrix uniform (this is the lib default name, but it could be changed)
       uniform mat4 uTextureMatrix0;
 
+      // our time uniform
+      uniform float uTime;
+
+      // our mouse position uniform
+      uniform vec2 uMousePosition;
+
+      // our mouse strength
+      uniform float uMouseStrength;
+
       // if you want to pass your vertex and texture coords to the fragment shader
       varying vec3 vVertexPosition;
       varying vec2 vTextureCoord;
@@ -101,13 +110,27 @@
       void main() {
         vec3 vertexPosition = aVertexPosition;
 
-        gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+        // get the distance between our vertex and the mouse position
+        float distanceFromMouse = distance(uMousePosition, vec2(vertexPosition.x, vertexPosition.y));
 
-        // set the varyings
+        // this will define how close the ripples will be from each other. The bigger the number, the more ripples you'll get
+        float rippleFactor = 6.0;
+        // calculate our ripple effect
+        float rippleEffect = cos(rippleFactor * (distanceFromMouse - (uTime / 120.0)));
+
+        // calculate our distortion effect
+        float distortionEffect = rippleEffect * uMouseStrength;
+
+        // apply it to our vertex position
+        vertexPosition +=  distortionEffect / 30.0;
+
+          gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+
+        // varyings
         // thanks to the texture matrix we will be able to calculate accurate texture coords
         // so that our texture will always fit our plane without being distorted
-        vTextureCoord = (uTextureMatrix0 * vec4(aTextureCoord, 0.0, 1.0)).xy;
-        vVertexPosition = vertexPosition;
+          vTextureCoord = (uTextureMatrix0 * vec4(aTextureCoord, 0.0, 1.0)).xy;
+          vVertexPosition = vertexPosition;
       }
         </script>
         <script id="plane-fs" type="x-shader/x-fragment">
@@ -119,33 +142,25 @@
       varying vec3 vVertexPosition;
       varying vec2 vTextureCoord;
 
-      // the uniform we declared inside our javascript
-      uniform float uTime;
-
-      // our texture sampler (default name, to use a different name please refer to the documentation)
+      // our texture sampler (this is the lib default name, but it could be changed)
       uniform sampler2D uSampler0;
 
       void main() {
         // get our texture coords
-        vec2 textureCoord = vTextureCoord;
+        vec2 textureCoords = vTextureCoord;
 
-        // displace our pixels along both axis based on our time uniform and texture UVs
-        // this will create a kind of water surface effect
-        // try to comment a line or change the constants to see how it changes the effect
-        // reminder : textures coords are ranging from 0.0 to 1.0 on both axis
-        const float PI = 3.141592;
+        // apply our texture
+        vec4 finalColor = texture2D(uSampler0, textureCoords);
 
-        textureCoord.x += (
-          sin(textureCoord.x * 10.0 + ((uTime * (PI / 3.0)) * 0.031))
-          + sin(textureCoord.y * 10.0 + ((uTime * (PI / 2.489)) * 0.017))
-          ) * 0.0075;
+        // fake shadows based on vertex position along Z axis
+        finalColor.rgb -= clamp(-vVertexPosition.z, 0.0, 1.0);
+        // fake lights based on vertex position along Z axis
+        finalColor.rgb += clamp(vVertexPosition.z, 0.0, 1.0);
 
-        textureCoord.y += (
-          sin(textureCoord.y * 20.0 + ((uTime * (PI / 2.023)) * 0.023))
-          + sin(textureCoord.x * 20.0 + ((uTime * (PI / 3.1254)) * 0.037))
-          ) * 0.0125;
+        // handling premultiplied alpha (useful if we were using a png with transparency)
+        finalColor = vec4(finalColor.rgb * finalColor.a, finalColor.a);
 
-        gl_FragColor = texture2D(uSampler0, textureCoord);
+        gl_FragColor = finalColor;
       }
         </script>
 
