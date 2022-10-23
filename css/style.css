@@ -39,32 +39,17 @@ nav {
 .plane {
   /* define the size of your plane */
   width: 80%;
-  max-width: 400px;
-  height: 50vh;
+  max-width: 1400px;
+  height: 80vh;
   position: relative;
-  top: 2vh;
+  top: 10vh;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .plane img {
   /* hide the img element */
   display: none;
 }
-
-/*** in case of error show the image ***/
-
-.no-curtains .plane {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.no-curtains .plane img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
 
 
 .cursor {
