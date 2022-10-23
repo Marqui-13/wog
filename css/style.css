@@ -86,6 +86,7 @@ canvas {
   width: 522px; 
   height: 353px;
   transform: translate(-50%, -50%);
+  filter: blur(2px) contrast(3);
 }
 
 .header {
