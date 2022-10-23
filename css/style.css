@@ -32,6 +32,11 @@ body {
   justify-content: space-between;
 }
 
+.logo{
+  position: absolute;
+  bottom: 0;
+}
+
 .plane {
   /* define the size of your plane */
   width: 100%;
