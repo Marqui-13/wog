@@ -2098,13 +2098,14 @@ Responsive Codes
   }
 
   canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
 
   .header {
     position: relative;
