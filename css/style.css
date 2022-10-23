@@ -72,7 +72,7 @@ body {
 canvas {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   right: 0;
   width: 522px; 
   height: 353px;
@@ -2101,11 +2101,11 @@ Responsive Codes
   canvas {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 40%;
+  right: 0;
   width: 522px; 
   height: 353px;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
 }
 
   .header {
@@ -2162,6 +2162,16 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 768px) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
+  
   .footer-list-header {
     font-size: 2em;
   }
@@ -2194,6 +2204,15 @@ Responsive Codes
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -2210,6 +2229,15 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
   .header {
     padding: 0 2.4rem;
   }
@@ -2233,6 +2261,15 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 480px) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
   /* .nameReveal {
     margin-bottom: 110px;
   } */
@@ -2257,6 +2294,15 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
   .ps {
     display: flex; 
     flex-wrap: wrap; 
@@ -2273,6 +2319,15 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
+   canvas {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 0;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+}
   .footer-list-header {
     font-size: 2.2em;
   }
