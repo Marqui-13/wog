@@ -32,17 +32,13 @@ body {
   justify-content: space-between;
 }
 
-nav {
-  z-index: 12;
-}
-
 .plane {
   /* define the size of your plane */
-  width: 80%;
-  max-width: 1400px;
-  height: 80vh;
-  position: relative;
-  top: 10vh;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 2vh;
   margin: 0 auto;
 }
 
@@ -50,7 +46,6 @@ nav {
   /* hide the img element */
   display: none;
 }
-
 
 .cursor {
   width: 20px;
@@ -76,11 +71,12 @@ nav {
 
 canvas {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 11;
+  top: 50%;
+  left: 50%;
+  width: 522px; 
+  height: 353px;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
 }
 
 .header {
@@ -1733,7 +1729,7 @@ footer {
   height: 20px;
   bottom: 0;
   position: fixed;
-  z-index: 15;
+  z-index: 10;
 } 
 
 
@@ -2100,10 +2096,6 @@ Responsive Codes
     border: 3px solid #212529;
     color: #212529;
   }
-  
-  nav {
-    z-index: 12; 
-  }
 
   canvas {
     position: absolute;
@@ -2111,7 +2103,7 @@ Responsive Codes
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 11;
+    z-index: -10;
   }
 
   .header {
