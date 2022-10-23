@@ -166,13 +166,6 @@ function connect(){
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
                 ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
                 ctx.stroke();
-              
-                ctx.lineWidth = 1;
-              ctx.strokeStyle = 'rgba(255,255,255,0.1)';
-                 ctx.beginPath();
-                ctx.moveTo(mouse.x, mouse.y);
-                ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-                ctx.stroke();
             }
         }
     
