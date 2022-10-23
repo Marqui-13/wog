@@ -17,10 +17,6 @@ html {
   height: 100%;
 }
 
-nav {
-  z-index: 12;  
-}
-
 body {
   overflow-x: hidden;
   width: 100vw;
