@@ -70,17 +70,91 @@
 
     <!-- CANVAS TAG -->
     <canvas id="canvas1"></canvas>
+    
+    <!-- div used to create our plane -->
+    <div class="plane">
+
+      <!-- image that will be used as a texture by our plane -->
+      <img src="./images/profile.png" crossorigin="anonymous"/>
+    </div>
+
+        <script id="plane-vs" type="x-shader/x-vertex">
+      #ifdef GL_ES
+      precision mediump float;
+      #endif
+
+      // those are the mandatory attributes that the lib sets
+      attribute vec3 aVertexPosition;
+      attribute vec2 aTextureCoord;
+
+      // those are mandatory uniforms that the lib sets and that contain our model view and projection matrix
+      uniform mat4 uMVMatrix;
+      uniform mat4 uPMatrix;
+          
+      // our texture matrix uniform (this is the lib default name, but it could be changed)
+      uniform mat4 uTextureMatrix0;
+
+      // if you want to pass your vertex and texture coords to the fragment shader
+      varying vec3 vVertexPosition;
+      varying vec2 vTextureCoord;
+
+      void main() {
+        vec3 vertexPosition = aVertexPosition;
+
+        gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+
+        // set the varyings
+        // thanks to the texture matrix we will be able to calculate accurate texture coords
+        // so that our texture will always fit our plane without being distorted
+        vTextureCoord = (uTextureMatrix0 * vec4(aTextureCoord, 0.0, 1.0)).xy;
+        vVertexPosition = vertexPosition;
+      }
+        </script>
+        <script id="plane-fs" type="x-shader/x-fragment">
+      #ifdef GL_ES
+      precision mediump float;
+      #endif
+
+      // get our varyings
+      varying vec3 vVertexPosition;
+      varying vec2 vTextureCoord;
+
+      // the uniform we declared inside our javascript
+      uniform float uTime;
+
+      // our texture sampler (default name, to use a different name please refer to the documentation)
+      uniform sampler2D uSampler0;
+
+      void main() {
+        // get our texture coords
+        vec2 textureCoord = vTextureCoord;
+
+        // displace our pixels along both axis based on our time uniform and texture UVs
+        // this will create a kind of water surface effect
+        // try to comment a line or change the constants to see how it changes the effect
+        // reminder : textures coords are ranging from 0.0 to 1.0 on both axis
+        const float PI = 3.141592;
+
+        textureCoord.x += (
+          sin(textureCoord.x * 10.0 + ((uTime * (PI / 3.0)) * 0.031))
+          + sin(textureCoord.y * 10.0 + ((uTime * (PI / 2.489)) * 0.017))
+          ) * 0.0075;
+
+        textureCoord.y += (
+          sin(textureCoord.y * 20.0 + ((uTime * (PI / 2.023)) * 0.023))
+          + sin(textureCoord.x * 20.0 + ((uTime * (PI / 3.1254)) * 0.037))
+          ) * 0.0125;
+
+        gl_FragColor = texture2D(uSampler0, textureCoord);
+      }
+        </script>
+
+
+    <script src="https://www.curtainsjs.com/build/curtains.min.js" type="text/javascript"></script>
 
         <!-- CONTENT SECTION STARTS -->   
         <div class="logo">
-          <img
-            src="./images/profile.png"
-            style="margin-top: 0; margin-bottom: 0px; z-index: 100;"
-            alt="image"
-            width="255px"
-            height="250px"
-            class=""
-          />
+  
 
           <!-- INFORMATION + TEXT REVEAL EFFECT STARTS -->
           <p id="information1" style="margin-left: 10px; margin-top: 10px; font-weight: bolder; font-size: 15px;">Founder &nbsp; | &nbsp; Developer &nbsp; | &nbsp; Student</p>
