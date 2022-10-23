@@ -33,7 +33,8 @@ body {
 }
 
 .logo{
-  bottom: 60px;
+  position: relative;
+  bottom: 80px;
 }
 
 .plane {
