@@ -32,7 +32,11 @@ body {
   justify-content: space-between;
 }
 
-.logo{
+.b {
+  color: black;
+}
+
+.logo {
   margin-top: 80px;
   top: 80%;
 }
