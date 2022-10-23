@@ -32,6 +32,10 @@ body {
   justify-content: space-between;
 }
 
+nav {
+  z-index: 12;
+}
+
 .cursor {
   width: 20px;
   height: 20px;
