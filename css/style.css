@@ -2084,6 +2084,10 @@ Responsive Codes
     border: 3px solid #212529;
     color: #212529;
   }
+  
+  nav {
+    z-index: 12; 
+  }
 
   canvas {
     position: absolute;
@@ -2091,7 +2095,7 @@ Responsive Codes
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
+    z-index: 11;
   }
 
   .header {
