@@ -17,8 +17,7 @@ html {
   height: 100%;
 }
 
-input {
-  position: absolute;
+select, textarea, input {
   z-index: 999;
 }
 
