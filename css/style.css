@@ -17,6 +17,11 @@ html {
   height: 100%;
 }
 
+input {
+  position: absolute;
+  z-index: 999;
+}
+
 body {
   position: absolute;
   overflow-x: hidden;
