@@ -2101,6 +2101,9 @@ Responsive Codes
     font-size: 13px;
   } */
 
+  body {
+    position: absolute; 
+  }
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
@@ -2172,7 +2175,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 768px) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -2214,7 +2220,10 @@ Responsive Codes
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2239,7 +2248,10 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -2271,7 +2283,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 480px) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -2304,7 +2319,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -2329,7 +2347,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
-   canvas {
+  body {
+    position: absolute; 
+  }
+  canvas {
   position: absolute;
   top: 50%;
   left: 40%;
