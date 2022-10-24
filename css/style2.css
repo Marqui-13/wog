@@ -63,7 +63,7 @@ canvas {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400%;
+  height: 400vh;
   z-index: 11;
 }
 
