@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  position: absolute;
   overflow-x: hidden;
   width: 100vw;
   height: 100%;
