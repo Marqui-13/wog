@@ -71,7 +71,7 @@ body {
 
 canvas {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   width: 522px; 
   height: 353px;
@@ -2098,8 +2098,8 @@ Responsive Codes
 
   canvas {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     z-index: -10;
@@ -2159,6 +2159,14 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 768px) {
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
   .footer-list-header {
     font-size: 2em;
   }
@@ -2191,6 +2199,14 @@ Responsive Codes
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -2207,6 +2223,14 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
   .header {
     padding: 0 2.4rem;
   }
@@ -2233,6 +2257,14 @@ Responsive Codes
   /* .nameReveal {
     margin-bottom: 110px;
   } */
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
 
 
 
@@ -2254,6 +2286,14 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
   .ps {
     display: flex; 
     flex-wrap: wrap; 
@@ -2270,6 +2310,14 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
   .footer-list-header {
     font-size: 2.2em;
   }
