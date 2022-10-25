@@ -2248,10 +2248,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
-  .mp {
+  img .mp {
     display: none;
   }
-  .mpb {
+  a .mpb {
     display: none;
   }
   .ps {
@@ -2270,10 +2270,12 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
-  .mp {
+  img .mp {
+    opacity: 0;
     display: none;
   }
-  .mpb {
+  a .mpb {
+    opacity: 0;
     display: none;
   }
   .footer-list-header {
