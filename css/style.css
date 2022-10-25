@@ -75,7 +75,7 @@ canvas {
   top: 50%;
   left: 50%;
   width: 522px; 
-  height: 300px;
+  height: 200px;
   transform: translate(-50%, -50%);
   filter: blur(2px) contrast(3);
 }
