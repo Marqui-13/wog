@@ -17,6 +17,10 @@ html {
   height: 100%;
 }
 
+nav {
+  z-index: 12; 
+}
+
 body {
   overflow-x: hidden;
   width: 100vw;
@@ -30,21 +34,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-}
-
-.plane {
-  /* define the size of your plane */
-  width: 100%;
-  max-width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 2vh;
-  margin: 0 auto;
-}
-
-.plane img {
-  /* hide the img element */
-  display: none;
 }
 
 .cursor {
@@ -69,15 +58,15 @@ body {
   }
 }
 
-/* canvas {
+canvas {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 522px; 
-  height: 353px;
-  transform: translate(-50%, -50%);
-  filter: blur(2px) contrast(3);
-} */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500vh;
+  z-index: -1;
+}
+
 
 .header {
   height: 10rem;
@@ -201,6 +190,32 @@ section {
   filter: blur(0);
   transform: translateX(0);
   transform: translateY(0);
+}
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background-color: var(--container-color-alt);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
+
+.scrolltop__icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 5rem;
 }
 
 .logos {
@@ -2096,14 +2111,18 @@ Responsive Codes
     border: 3px solid #212529;
     color: #212529;
   }
+  
+  nav {
+    z-index: 12; 
+  }
 
   canvas {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
+    z-index: 11;
   }
 
   .header {
@@ -2160,14 +2179,6 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 768px) {
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
   .footer-list-header {
     font-size: 2em;
   }
@@ -2200,14 +2211,6 @@ Responsive Codes
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -2224,14 +2227,6 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
   .header {
     padding: 0 2.4rem;
   }
@@ -2258,14 +2253,6 @@ Responsive Codes
   /* .nameReveal {
     margin-bottom: 110px;
   } */
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
 
 
 
@@ -2287,13 +2274,11 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
+  img .mp {
+    display: none;
+  }
+  a .mpb {
+    display: none;
   }
   .ps {
     display: flex; 
@@ -2311,13 +2296,13 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
-  canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
+  img .mp {
+    opacity: 0;
+    display: none;
+  }
+  a .mpb {
+    opacity: 0;
+    display: none;
   }
   .footer-list-header {
     font-size: 2.2em;
