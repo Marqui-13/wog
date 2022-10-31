@@ -24,7 +24,7 @@ nav {
 body {
   overflow-x: hidden;
   width: 100vw;
-  height: 150%;
+  min-height: 300vh;
   z-index: 999;
   cursor: url(http://cursor.in/assets/cursor.svg), auto;
   font: 11px "Open Sans", sans-serif;
