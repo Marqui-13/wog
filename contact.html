@@ -22,6 +22,14 @@
             api_key: 'wg_3e08a021d79099a6e33e03c29165f38e7'
         });
     </script>
+    <!-- LEAFLET CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <!-- LEAFLET JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
   </head>
   <body>
 
@@ -92,7 +100,8 @@
       
       <div class="row">
         <div class="hidden3 column">
-          <img src="./images/map.jpg" style="width: 100%" />
+          <!-- <img src="./images/map.jpg" style="width: 100%" /> -->
+          <div id="map" style="height: 180px; width: 100%"></div>
         </div>
         <div class="column">
           <!-- CONTACT FORM STARTS -->
@@ -194,6 +203,16 @@
         </div>
       </div>
     <!-- CONTENT SECTION ENDS -->
+    
+    <!-- CREATE MAP OF LOCATION -->
+    <script>
+      var map = L.map('map').setView([41.878, 93.097], 13);
+      
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    </script>
     
     <!-- TOP OF PAGE BUTTON STARTS -->
 <!--     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;
