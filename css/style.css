@@ -87,8 +87,8 @@ canvas {
   align-items: center;
   background-color: white;
   margin-top: 0px;
-  position: relative;
-  top: 0;
+  position: fixed;
+  
 }
 
 h1 {
