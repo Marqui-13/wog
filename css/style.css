@@ -2111,7 +2111,8 @@ Responsive Codes
   }
 
   .header {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
 
   .header .logo {
@@ -2172,6 +2173,11 @@ Responsive Codes
     height: 100%;
     z-index: -10;
   }
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   .footer-list-header {
     font-size: 2em;
   }
@@ -2212,6 +2218,11 @@ Responsive Codes
     height: 100%;
     z-index: -10;
   }
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -2237,6 +2248,8 @@ Responsive Codes
     z-index: -10;
   }
   .header {
+    position: fixed;
+    width: 100%;
     padding: 0 2.4rem;
   }
 
@@ -2272,6 +2285,10 @@ Responsive Codes
   }
 
 
+  .header {
+    position: fixed;
+    width: 100%;
+  }
 
   .footer-social-overlap > a {
     margin: auto;
@@ -2299,6 +2316,11 @@ Responsive Codes
     height: 280px;
     z-index: -10;
   }
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   .ps {
     display: flex; 
     flex-wrap: wrap; 
@@ -2323,6 +2345,12 @@ Responsive Codes
     height: 280px;
     z-index: -10;
   }
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+
   .footer-list-header {
     font-size: 2.2em;
   }
