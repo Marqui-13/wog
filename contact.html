@@ -206,9 +206,28 @@
     
     <!-- CREATE MAP OF LOCATION -->
     <script>
-      var map = L.map('map').setView([42.01, -93.05], 8);
+      <!--var map = L.map('map').setView([42.01, -93.05], 8);-->
+         // Creating map options
+         var mapOptions = {
+            center: [42.01, -93.05],
+            zoom: 8,
+            zoomControl: true
+         }
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+
+         // zoom control options
+         var zoomOptions = {
+            zoomInText: '+',
+            zoomOutText: '-',
+         };
+         // Creating zoom control
+         var zoom = L.control.zoom(zoomOptions);
+         // Adding zoom control to the map
+         zoom.addTo(map);  
+         
       
-      L.control.zoom(<Control.Zoom options> zoomControl: true );
+      <!--L.control.zoom(<Control.Zoom options> zoomControl: true );-->
       
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
