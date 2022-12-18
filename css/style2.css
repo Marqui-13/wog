@@ -75,6 +75,8 @@ canvas {
   align-items: center;
   background-color: white;
   margin-top: 0;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
@@ -2126,7 +2128,8 @@ Responsive Codes
   }
 
   .header {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
 
   .header .logo {
@@ -2179,6 +2182,10 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   .footer-list-header {
     font-size: 2em;
   }
@@ -2211,6 +2218,12 @@ Responsive Codes
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -2229,6 +2242,8 @@ Responsive Codes
 @media (max-width: 35em) {
   .header {
     padding: 0 2.4rem;
+    position: fixed;
+    width: 100%;
   }
 
   .header .logo {
@@ -2250,6 +2265,12 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 480px) {
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+
   /* .nameReveal {
     margin-bottom: 110px;
   } */
@@ -2274,6 +2295,11 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
+
+  .header{
+    position: fixed;
+    width: 100%;
+  }
   img .mp {
     display: none;
   }
@@ -2296,6 +2322,11 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 320px) {
+
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   img .mp {
     opacity: 0;
     display: none;
