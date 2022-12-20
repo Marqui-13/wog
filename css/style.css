@@ -2014,7 +2014,12 @@ footer {
 }
 
 .footer0:nth-child(45) {
-  transition-delay: 9300ms;
+  transition-delay: 9200ms;
+  margin: 0;
+}
+
+.footer0:nth-child(46) {
+  transition-delay: 9500ms;
   margin: 0;
 }
 
