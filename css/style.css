@@ -2118,6 +2118,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
 
   .header .logo {
@@ -2182,6 +2183,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   .footer-list-header {
     font-size: 2em;
@@ -2227,6 +2229,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   .column, input[type=submit] {
     width: 100%;
@@ -2256,6 +2259,7 @@ Responsive Codes
     position: fixed;
     width: 100%;
     padding: 0 2.4rem;
+    z-index: 100;
   }
 
   .header .logo {
@@ -2293,6 +2297,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
 
   .footer-social-overlap > a {
@@ -2325,6 +2330,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   .ps {
     display: flex; 
@@ -2354,6 +2360,7 @@ Responsive Codes
   .header {
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
 
   .footer-list-header {
