@@ -601,7 +601,7 @@ nav__toggle {
 
 .show-scroll {
   visibility: visible;
-  bottom: 2.5rem;
+  bottom: 3rem;
 }
 
 /*========== MEDIA QUERIES ==========*/
