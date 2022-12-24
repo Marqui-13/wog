@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -15,7 +17,7 @@ html {
   background: black;
   color: white;
   min-height: 600vh;
-  width: 70%;
+  width: 100%;
 }
 
 nav {
