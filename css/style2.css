@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
-  width: 100%;
+  overflow: hidden;
 }
 
 html {
