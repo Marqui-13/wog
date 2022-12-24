@@ -13,8 +13,9 @@ html {
   /* 1rem = 10px */
   background: black;
   color: white;
-  min-height: 550vh;
+  min-height: 400vh;
   width: 100%;
+  position: absolute;
 }
 
 nav {
@@ -32,7 +33,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  position: absolute;
 }
 
 .cursor {
