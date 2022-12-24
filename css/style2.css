@@ -7,7 +7,6 @@
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 html {
@@ -25,6 +24,7 @@ nav {
 }
 
 body {
+  overflow-x: hidden;
   height: 100%;
   z-index: 999;
   cursor: url(http://cursor.in/assets/cursor.svg), auto;
