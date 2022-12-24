@@ -1578,7 +1578,9 @@ img {
   margin: 10px;
   border-radius: 13px;
   display: block;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .para {
