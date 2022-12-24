@@ -1578,8 +1578,7 @@ img {
   margin: 10px;
   border-radius: 13px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .para {
