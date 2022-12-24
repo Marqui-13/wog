@@ -15,7 +15,6 @@ html {
   color: white;
   min-height: 400vh;
   width: 100%;
-  position: absolute;
 }
 
 nav {
@@ -33,6 +32,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .cursor {
