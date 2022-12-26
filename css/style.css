@@ -2019,7 +2019,12 @@ footer {
 }
 
 .footer0:nth-child(46) {
-  transition-delay: 9500ms;
+  transition-delay: 9400ms;
+  margin: 0;
+}
+
+:nth-child(47) {
+  transition-delay: 9700ms;
   margin: 0;
 }
 
