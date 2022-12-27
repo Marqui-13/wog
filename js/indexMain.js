@@ -89,7 +89,7 @@ image.addEventListener('load', function(){
                 }
             }
             this.angle += this.speed/20;
-            let movement = (5.0 - this.speed) + this.velocity;
+            let movement = (3.5 - this.speed) + this.velocity;
             this.y -= movement + Math.cos(this.angle) * 2;
             this.x += Math.cos(this.angle) * 2;
             if (this.y <= 0) {
