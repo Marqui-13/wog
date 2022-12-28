@@ -58,7 +58,7 @@ image.addEventListener('load', function(){
             const green = pixels.data[(y * 4 * pixels.width) + (x * 4 + 1)]
             const blue = pixels.data[(y * 4 * pixels.width) + (x * 4 + 2)]
             const color = 'rgb(' + red +',' + green + ',' + blue + ')';
-            const brightness = calculateBrightness(red, green, blue)/70;
+            const brightness = calculateBrightness(red, green, blue)/100;
             const cell = [
                 cellColor = color,
                 cellBrightness = brightness,
@@ -139,9 +139,9 @@ image.addEventListener('load', function(){
 
     function calculateBrightness(red, green, blue){
         return Math.sqrt(
-            (red * red) * 0.259 +
-            (green * green) * 0.577 +
-            (blue * blue) * 0.123
+            (red * red) * 0.01 +
+            (green * green) * 0.01 +
+            (blue * blue) * 0.01
         );
     }
 
