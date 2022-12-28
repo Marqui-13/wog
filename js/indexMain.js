@@ -39,8 +39,8 @@ image.src = 'data:image/jpeg;base64,/9j/4QEIRXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEA
 image.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    canvas.width = 400;
-    canvas.height = 270;
+    canvas.width = 300;
+    canvas.height = 300;
 
     let particlesArray = [];
     const numberOfParticles = 5000;
