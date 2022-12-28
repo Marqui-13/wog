@@ -39,7 +39,7 @@ image.src = 'data:image/jpeg;base64,/9j/4QEIRXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEA
 image.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    canvas.width = 525;
+    canvas.width = 400;
     canvas.height = 200;
 
     let particlesArray = [];
@@ -89,7 +89,7 @@ image.addEventListener('load', function(){
                 }
             }
             this.angle += this.speed/20;
-            let movement = (4.3 - this.speed) + this.velocity;
+            let movement = (5.0 - this.speed) + this.velocity;
             this.y -= movement + Math.cos(this.angle) * 2;
             this.x += Math.cos(this.angle) * 2;
             if (this.y <= 0) {
