@@ -100,7 +100,7 @@ image.addEventListener('load', function(){
         }
         draw(){
             ctx.beginPath();
-            ctx.fillStyle = 'black';
+            ctx.fillStyle = 'white';
             if (this.y > canvas.height - this.size * 6) ctx.globalAlpha = 0;
             if (grid[this.position1]){
                 if (grid[this.position1][this.position2]){
