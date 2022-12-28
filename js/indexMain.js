@@ -139,9 +139,9 @@ image.addEventListener('load', function(){
 
     function calculateBrightness(red, green, blue){
         return Math.sqrt(
-            (red * red) * 5 +
-            (green * green) * 0.01 +
-            (blue * blue) * 5
+            (red * red) * 0.259 +
+            (green * green) * 2 +
+            (blue * blue) * 0.123
         );
     }
 
