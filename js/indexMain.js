@@ -40,7 +40,7 @@ image.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = 300;
-    canvas.height = 200;
+    canvas.height = 300;
 
     let particlesArray = [];
     const numberOfParticles = 7000;
@@ -124,10 +124,10 @@ image.addEventListener('load', function(){
     init();
 
     function animate () {
-        ctx.globalAlpha = 0.05;
+        ctx.globalAlpha = 0.5;
         ctx.fillStyle = 'rgb(0, 0, 0)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.globalAlpha = 0.3;
+        ctx.globalAlpha = 0.9;
         for (let i = 0; i < particlesArray.length; i++) {
             particlesArray[i].update();
             ctx.globalAlpha = particlesArray[i].speed * 0.3;
