@@ -44,7 +44,7 @@ image.addEventListener('load', function(){
 
     let particlesArray = [];
     const numberOfParticles = 7000;
-    const detail = 5;
+    const detail = 1;
 
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
     const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -130,7 +130,7 @@ image.addEventListener('load', function(){
         ctx.globalAlpha = 0.9;
         for (let i = 0; i < particlesArray.length; i++) {
             particlesArray[i].update();
-            ctx.globalAlpha = particlesArray[i].speed * 0.3;
+            ctx.globalAlpha = particlesArray[i].speed * 0.9;
             particlesArray[i].draw();
         }
         requestAnimationFrame( animate );
