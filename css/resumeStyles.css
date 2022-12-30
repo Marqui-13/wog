@@ -611,6 +611,10 @@ nav__toggle {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
+  
+  .generate-pdf {
+    display: inline-block;
+  }
 }
 
 /* Classes modified for large screen size */
