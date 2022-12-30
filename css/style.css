@@ -77,7 +77,8 @@ canvas {
   width: 300px; 
   height: 400px;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(8px 8px 10px white);
+  filter: drop-shadow(8px 8px 10px white) blur(10px);
+  border: 10px;
 }
 
 .header {
