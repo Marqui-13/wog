@@ -77,7 +77,7 @@ canvas {
   width: 300px; 
   height: 400px;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(8px 8px 10px white) brightness(200%);
+  filter: drop-shadow(8px 8px 10px white) brightness(130%);
   border: 10px;
 }
 
