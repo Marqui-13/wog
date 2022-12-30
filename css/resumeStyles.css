@@ -116,7 +116,8 @@ body.scale-cv {
 }
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
-.scale-cv .change-theme, 
+.scale-cv .change-theme,
+.scale-cv .generate-pdf,
 .scale-cv .home-btn{
   display: none;
 }
@@ -609,10 +610,6 @@ nav__toggle {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
-  
-  .generate-pdf {
-    display: inline-block;
-  }
 }
 
 /* Classes modified for large screen size */
@@ -659,10 +656,10 @@ nav__toggle {
   .home__container {
     gap: 1.5rem;
   }
-
+/* 
   .home__button {
     display: none;
-  }
+  } */
 
   .references__container {
     grid-template-columns: repeat(2, 1fr);
