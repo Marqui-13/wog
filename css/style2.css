@@ -2241,9 +2241,6 @@ Responsive Codes
 
 /* Below 560px  */
 @media (max-width: 35em) {
-  *, html {
-     overflow-x: hidden;
-  }
   .header {
     padding: 0 2.4rem;
   }
@@ -2295,10 +2292,6 @@ Responsive Codes
 }
 
 @media only screen and (max-width: 390px) {
-  *, html {
-     overflow-x: hidden;
-  }
-
   .header{
     position: fixed;
     width: 100%;
