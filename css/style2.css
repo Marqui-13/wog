@@ -39,7 +39,6 @@ body {
 
 .logo {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .header {
