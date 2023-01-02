@@ -49,6 +49,7 @@ body {
   align-items: center;
   background-color: white;
   margin-top: 0;
+  position: absolute;
 }
 
 h1 {
