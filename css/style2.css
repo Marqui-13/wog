@@ -38,7 +38,8 @@ body {
 }
 
 .logo {
-  display: flex;
+  overflow-x: hidden;
+  position: absolute;
 }
 
 .header {
