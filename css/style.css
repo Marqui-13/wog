@@ -2330,6 +2330,10 @@ Responsive Codes
     height: 280px;
     z-index: -10;
   }
+  
+  .logo p, .logo h4 {
+    margin-top: 20px;
+  }
 
   .header {
     position: fixed;
