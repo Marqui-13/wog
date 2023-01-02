@@ -2259,6 +2259,11 @@ Responsive Codes
     height: 100%;
     z-index: -10;
   }
+  
+  .logo p, .logo h4 {
+    display: none;
+  }
+  
   .header {
     position: fixed;
     width: 100%;
@@ -2297,6 +2302,9 @@ Responsive Codes
     z-index: -10;
   }
 
+  .logo p, .logo h4 {
+    display: none;
+  }
 
   .header {
     position: fixed;
@@ -2332,7 +2340,7 @@ Responsive Codes
   }
   
   .logo p, .logo h4 {
-    margin-top: 20px;
+    display: none;
   }
 
   .header {
@@ -2369,6 +2377,10 @@ Responsive Codes
     position: fixed;
     width: 100%;
     z-index: 100;
+  }
+  
+  .logo p, .logo h4 {
+    display: none;
   }
 
   .footer-list-header {
