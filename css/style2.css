@@ -37,7 +37,10 @@ body {
   position: absolute;
 }
 
-
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .header {
   height: 10rem;
