@@ -74,8 +74,8 @@ image.addEventListener('load', function(){
             this.y = canvas.height;
             //this.prevX = this.x;
             this.speed = 0;
-            this.velocity = Math.random() * 2.0;
-            this.size = Math.random() * 1.3;
+            this.velocity = Math.random() * 3.0;
+            this.size = Math.random() * 3.0;
             this.position1 = Math.floor(this.y / detail);
             this.position2 = Math.floor(this.x / detail);
             this.angle = 0;
@@ -89,7 +89,7 @@ image.addEventListener('load', function(){
                 }
             }
             this.angle += this.speed/20;
-            let movement = (15 - this.speed) + this.velocity;
+            let movement = (10 - this.speed) + this.velocity;
             this.y -= movement + Math.cos(this.angle) * 2;
             this.x += Math.cos(this.angle) * 2;
             if (this.y <= 0) {
