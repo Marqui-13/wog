@@ -74,7 +74,7 @@ image.addEventListener('load', function(){
             this.y = canvas.height;
             //this.prevX = this.x;
             this.speed = 0;
-            this.velocity = Math.random() * 9.0;
+            this.velocity = Math.random() * 23.0;
             this.size = Math.random() * 2.0;
             this.position1 = Math.floor(this.y / detail);
             this.position2 = Math.floor(this.x / detail);
