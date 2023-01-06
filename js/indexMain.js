@@ -124,10 +124,10 @@ image.addEventListener('load', function(){
     init();
 
     function animate () {
-        ctx.globalAlpha = 0.3;
+        ctx.globalAlpha = 0.1;
         ctx.fillStyle = 'rgb(0, 0, 0)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.globalAlpha = 0.3;
+        ctx.globalAlpha = 0.1;
         for (let i = 0; i < particlesArray.length; i++) {
             particlesArray[i].update();
             ctx.globalAlpha = particlesArray[i].speed * 0.9;
