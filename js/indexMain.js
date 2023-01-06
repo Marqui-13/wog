@@ -75,7 +75,7 @@ image.addEventListener('load', function(){
             //this.prevX = this.x;
             this.speed = 0;
             this.velocity = Math.random() * 3.0;
-            this.size = Math.random() * 2.0;
+            this.size = Math.random() * 4.0;
             this.position1 = Math.floor(this.y / detail);
             this.position2 = Math.floor(this.x / detail);
             this.angle = 0;
