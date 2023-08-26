@@ -59,6 +59,10 @@ body {
   animation: cAnim .5s infinite alternate;
 }
 
+.tradingview-widget-container {
+  margin-top: 40%
+}
+
 
 
 @keyframes cAnim {
@@ -2260,6 +2264,10 @@ Responsive Codes
     height: 100%;
     z-index: -10;
   }
+
+  .tradingview-widget-container {
+    margin-top: 60%
+  }
   
   .logo p, .logo h4 {
     display: none;
@@ -2303,6 +2311,11 @@ Responsive Codes
     z-index: -10;
     /*margin-top: 100px;*/
   }
+
+  .tradingview-widget-container {
+    margin-top: 60%
+  }
+  
 
   .logo p, .logo h4 {
     display: none;
