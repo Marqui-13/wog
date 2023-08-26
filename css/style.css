@@ -2235,6 +2235,10 @@ Responsive Codes
     z-index: -10;
   }
 
+  .tradingview-widget-container {
+    display: none;
+  }
+
   .header {
     position: fixed;
     width: 100%;
