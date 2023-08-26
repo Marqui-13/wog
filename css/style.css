@@ -2266,7 +2266,7 @@ Responsive Codes
   }
 
   .tradingview-widget-container {
-    margin-top: 90%
+    display: none;
   }
   
   .logo p, .logo h4 {
@@ -2313,7 +2313,7 @@ Responsive Codes
   }
 
   .tradingview-widget-container {
-    margin-top: 90%
+    display: none;
   }
   
 
