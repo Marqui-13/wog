@@ -60,7 +60,7 @@ body {
 }
 
 .tradingview-widget-container {
-  margin-top: 40%
+  margin-top: 40%;
 }
 
 
@@ -2124,6 +2124,10 @@ Responsive Codes
     z-index: -10;
   }
 
+  .tradingview-widget-container {
+    margin-top: 30%;
+  }
+
   .header {
     position: fixed;
     width: 100%;
@@ -2187,6 +2191,10 @@ Responsive Codes
     width: 100%;
     height: 100%;
     z-index: -10;
+  }
+
+  .tradingview-widget-container {
+    display: none;
   }
 
   .header {
@@ -2363,6 +2371,10 @@ Responsive Codes
     display: none;
   }
 
+  .tradingview-widget-container {
+    display: none;
+  }
+
   .header {
     position: fixed;
     width: 100%;
@@ -2392,6 +2404,10 @@ Responsive Codes
     height: 280px;
     z-index: -10;
     margin-top: 100px;
+  }
+
+  .tradingview-widget-container {
+    display: none;
   }
   
   .header {
