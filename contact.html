@@ -180,8 +180,27 @@
             <p style="font-size: 17px; font-weight: 900;">Cloaked &nbsp; #: &nbsp; <a href="tel:2194014642">219-401-4642</a></p>
             <br /> <br />
             <p style="font-size: 17px; font-weight: 900;">Cloaked &nbsp; Email: &nbsp; <a href = "mailto: hang.zap.known@cloak.id">hang.zap.known@cloak.id</a></p>
-                <h4 style="text-align: center; font-weight: 900; margin-top: 0px; padding-top: 10px;">*Cloaked uses <a href=””>ECC 25519</a> , <a href=””>Argon2</a> , & <a href=”https://en.m.wikipedia.org/wiki/ChaCha20-Poly1305”>Xsalsa-Poly1305</a> for hashing and encryption approaches for user data, to remain highly secure.</h4>
+                <h4 style="text-align: center; font-weight: 900; margin-top: 0px; padding-top: 10px;">*Cloaked uses <a href=”” id=”link1”>ECC 25519</a> , <a href=”” id=”link2”>Argon2</a> , & <a href=”” id=”link3”>Xsalsa-Poly1305</a> for hashing and encryption approaches for user data, to remain highly secure.</h4>
           </form>
+          <script>
+        // Function to handle link clicks
+        function disableLink(event) {
+            // Prevent the default behavior of the link (navigation)
+            event.preventDefault();
+            // Optionally, you can add your own logic here to handle the disabled link
+            console.log("Link is disabled.");
+        }
+
+        // Get the links by their IDs
+        var link1 = document.getElementById('link1');
+        var link2 = document.getElementById('link2');
+        var link3 = document.getElementById('link3');
+
+        // Add click event listeners to the links
+        link1.addEventListener('click', disableLink);
+        link2.addEventListener('click', disableLink);
+        link3.addEventListener('click', disableLink);
+    </script>
           <!-- CONTACT FORM ENDS -->
         </div>
       </div>
