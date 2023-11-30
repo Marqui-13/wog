@@ -1,4 +1,6 @@
 <script>
+
+   document.addEventListener('DOMContentLoaded', function() {
         // Function to handle link clicks
         function disableLink(event) {
             // Prevent the default behavior of the link (navigation)
@@ -16,4 +18,6 @@
         link1.addEventListener('click', disableLink);
         link2.addEventListener('click', disableLink);
         link3.addEventListener('click', disableLink);
+
+   });
 </script>
