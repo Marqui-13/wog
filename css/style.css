@@ -2117,7 +2117,7 @@ Responsive Codes
 
   canvas {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -2186,7 +2186,7 @@ Responsive Codes
 @media only screen and (max-width: 768px) {
   canvas {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -2270,7 +2270,7 @@ Responsive Codes
 @media (max-width: 35em) {
   canvas {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -2316,7 +2316,7 @@ Responsive Codes
   } */
   canvas {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -2359,7 +2359,7 @@ Responsive Codes
 @media only screen and (max-width: 390px) {
   canvas {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     width: 100%;
     height: 280px;
@@ -2398,7 +2398,7 @@ Responsive Codes
 @media only screen and (max-width: 320px) {
   canvas {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     width: 100%;
     height: 280px;
