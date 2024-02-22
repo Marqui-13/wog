@@ -43,7 +43,7 @@ image.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0A
     canvas.height = 300;
 
     let particlesArray = [];
-    const numberOfParticles = 10000;
+    const numberOfParticles = 1000;
     const detail = 3;
 
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
