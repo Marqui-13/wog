@@ -7,7 +7,7 @@ let h3Elements = [];
 const h1Array = [...document.querySelectorAll('p')];
 const h2Array = [...document.querySelectorAll('p')];
 const h3Array = [...document.querySelectorAll('p')];
-const specialChars = [...'!@£$%&}{":;?><][+=-_qwertyuiopasdfghjklzxcvbnm'.split('')]
+const specialChars = [...'!@£$%&}{":;?><][+=-_ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσ/ςΤτΥυΦφΧχΨψΩωqwertyuiopasdfghjklzxcvbnm'.split('')]
 
 class Title{
     constructor(id, element){
