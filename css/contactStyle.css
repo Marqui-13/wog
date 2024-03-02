@@ -36,6 +36,10 @@ body {
   justify-content: space-between;
 }
 
+#map {
+  margin-bottom: 30px;
+}
+
 .cursor {
   width: 20px;
   height: 20px;
