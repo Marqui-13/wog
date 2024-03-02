@@ -101,6 +101,7 @@ h2 {
 
 #information1 {
   font-size: 80px;
+  z-index: 100;
 }
 
 span {
